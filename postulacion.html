@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulación de empleo</title>
+</head>
+<body>
+    <main>
+        <form action="/huerta.html" id="jobapplication" >
+           <fieldset>
+            <legend>Información personal:</legend>
+            <label for="name">Ingrese su nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Nombre" required><br>
+            <label for="lastname">Ingrese su apellido</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Apellido" required><br>
+            <label for="nacimiento">Ingrese su fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento" required><br>
+           </fieldset>
+           <br>
+            <fieldset>
+                <legend>Información de Contacto</legend>
+                <label for="email">Ingrese su correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                <label for="phone">Ingrese su número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+54 9 11 1234 5678" required>
+                <input type="textarea" id="address" name="address" rows="5" cols="10" placeholder="Dirección completa" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Presentacion Profesional</legend>
+                <input type="textarea" name="aboutyou" id="aboutyou" aria-rowcount="10" aria-colcount="5" placeholder="Cuéntanos sobre ti..." required>
+                <fieldset>
+                    <legend>Nivel de estudios alcanzado</legend>
+                    <label>
+                        <input type="radio" name="education" value="primario" required>
+                        Primario
+                    </label><br>
+                    <label>
+                        <input type="radio" name="education" value="secundario">
+                        Secundario
+                    </label><br>
+                    <label>
+                        <input type="radio" name="education" value="terciario">
+                        Terciario
+                    </label><br>
+                    <label>
+                        <input type="radio" name="education" value="universitario">
+                        Universitario
+                    </label><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Lenguajes que conoce:</legend>
+                    <input type="checkbox" name="lenguaje" id="Java" value="Java"><label for="Java">Java</label> <br>
+                    <input type="checkbox" name="lenguaje" id="JavaScript" value="JavaScript"><label for="JavaScript">JavaScript</label> <br>
+                    <input type="checkbox" name="lenguaje" id="Python" value="Python"><label for="Python">Python</label><br>
+                    <input type="checkbox" name="lenguaje" id="C++" value="C++"><label for="C++">C++</label><br>
+                    <input type="checkbox" name="lenguaje" id="Ruby" value="Ruby"><label for="Ruby">Ruby</label><br>
+                    <input type="checkbox" name="lenguaje" id="PHP" value="PHP"><label for="PHP">PHP</label><br>
+                </fieldset>
+            <fieldset>
+                <legend>Seleccione sus plantas favoritas:</legend>
+                <input type="checkbox" name="plantasInterior" id="Helecho" value="Helecho">
+                <label for="Helecho">Helecho</label><br>
+                <input type="checkbox" name="plantasInterior" id="Orquídea" value="Orquídea">
+                <label for="Orquídea">Orquídea</label><br>
+                <input type="checkbox" name="plantasInterior" id="Cactus" value="Cactus">
+                <label for="Cactus">Cactus</label><br>
+                <input type="checkbox" name="plantasInterior" id="Lavanda" value="Lavanda">
+                <label for="Lavanda">Lavanda</label><br>
+                <input type="checkbox" name="plantasInterior" id="Rosa" value="Rosa">
+                <label for="Rosa">Rosa</label><br>
+            </fieldset>
+
+                <br>
+                <label for="favorite">Seleccione su lenguaje favorito:</label>
+                <select name="favorite" id="favorite" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="PHP">PHP</option>
+                </select>
+
+                <br><br>
+                <label for="favoritePlant">Seleccione su planta favorita:</label>
+                <select name="favoritePlant" id="favoritePlant" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Girasol">Girasol</option>
+                    <option value="Lavanda">Lavanda</option>
+                    <option value="Cactus">Cactus</option>
+                    <option value="Helecho">Helecho</option>
+                    <option value="Orquídea">Orquídea</option>
+                </select>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
